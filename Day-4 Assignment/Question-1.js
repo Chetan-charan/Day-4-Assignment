@@ -3,12 +3,12 @@ var obj2 = { age:5, name: "Person 1" };
 
 var flag=true;
 
-if(Object.keys(obj1).length==Object.keys(obj2).length){
-    for(key in obj1) { 
-        if(obj1[key] == obj2[key]) {
+if(Object.keys(obj1).length==Object.keys(obj2).length){        //to check if no of keys of both objects are equal
+    for(key in obj1) {                                         //use for in loop to loop through object
+        if(obj1[key] == obj2[key]) {                           //if values are equal continue
             continue;
         }
-        else {
+        else {                                                 //else they are not equal
             flag=false;
             break;
         }
